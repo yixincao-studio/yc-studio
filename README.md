@@ -1,4 +1,4 @@
-# yc-studio.github.io
+# portfolio-template
 
 
-this is a template for art cources project3
+this is a template for art cources
