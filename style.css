@@ -95,3 +95,16 @@ footer {
     height: 200px;
     flex-wrap: wrap;
   }
+
+  .bg-img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
