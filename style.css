@@ -142,8 +142,8 @@ body{
   widows: 10px;
   text-align: center;
   position: absolute;
-  top: 70%;
-  left: 90%;
+  top: 800px;
+  left: 85%;
   transform: translate(-50%, -50%);
   transition-property: transform; 
   transition-duration: 1s;
@@ -170,18 +170,18 @@ body{
 }
 
 .frame-video {
-  position: absolute; /* Set the position absolute */
+  position: relative; /* Set the position absolute */
   z-index: 0;
   width: 200px;
   height: 100px;
 }
 
 .position1 {
- 
-  top: 200px;
-  left: 100px;
+  background-position: 200px;
+  top: 600px;
+  left: 0px;
   width: 300px;
-  border: 3px solid #73AD21;
+  
 }
 .position2 {
   top: 800px;
