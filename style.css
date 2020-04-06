@@ -124,10 +124,12 @@ body{
 }
 
 .bg-img{
-  margin-top: 40px;
-  width: 800px;
-  margin-left: 5px;
-  padding-right: 200px;
+  margin-top: 5px;
+  width: 960px;
+  margin: 0px;
+  padding-right: 50px;
+  background-image: cover;
+  left:20px;
 }
 
 .buttom2{
@@ -158,5 +160,30 @@ body{
    transition-duration: 1s;
 
 }
+.frameblack {
+  width: 465px;
+  height: 660px;
+  position: absolute; /* Set the position absolute */
+  z-index: 0; /* The larger number will be on top*/
+  right: 7px;
+  top: 100px;
+}
 
+.frame-video {
+  position: absolute; /* Set the position absolute */
+  z-index: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.position1 {
  
+  top: 200px;
+  left: 100px;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+.position2 {
+  top: 800px;
+  right: 20px;
+}
