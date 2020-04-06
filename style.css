@@ -18,6 +18,9 @@
   letter-spacing: 8px;
   text-transform: uppercase;
 }
+.text :hover{
+  background: rgb(45, 22, 173);
+}
 @keyframes text {
   0%{
     color: rgb(255, 255, 154);
@@ -45,14 +48,15 @@
    widows: 2px;
    text-align: center;
    position: absolute;
-   top: 47%;
-   left: 50%;
+   top: 70%;
+   left: 90%;
    transform: translate(-50%, -50%);
+   
   }
-.button a:hover{
-      background:yellow;
-      color:black;
+.grid-1 :hover{
+  background-color: darkred;
 }
+
 
 .feature-img {
   width: 100%;
@@ -77,34 +81,31 @@ footer {
 
 
 
-//////////////////////////////
 
-.grid-2{
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 0;
-  position: relative;
-  width: auto;
+
+
+
+
+
+
+
+body{
+  background: rgb(7, 7, 17);
+}
+
+.main-block{
+  float: right;
+   width: 70%;
+
   }
 
+.side-block{
+   float: left;
+   width: 30%;
+   color: darkgrey;
+}
 
 
-  .flex-container{
-    display: flex;
-    width: 50%;
-    height: 200px;
-    flex-wrap: wrap;
-  }
 
-  .bg-img {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    opacity: 1;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    
-  }
-  
+
+ 
