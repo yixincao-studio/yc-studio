@@ -51,10 +51,13 @@
    top: 70%;
    left: 90%;
    transform: translate(-50%, -50%);
+   transition-property: transform; 
+   transition-duration: 1s;
    
   }
-.grid-1 :hover{
-  background-color: darkred;
+.buttom:hover {
+  background-color: rgb(153, 31, 31);
+  transform: rotateY(180deg);
 }
 
 
