@@ -101,15 +101,18 @@ body{
   background: rgb(0, 0, 0);
 }
 
-.flex-container {
+.grid-container {
   display: flex;
   justify-content: space-around;
-  
-  flex-wrap: wrap;
-  
+   flex-wrap: wrap;
+   display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
-.flex-container > div {
+.grid-container > div {
  
   width: 400px;
   margin: 10px;
@@ -158,32 +161,41 @@ body{
   transform: translate(-50%, -50%);
    transition-property: transform; 
    transition-duration: 1s;
+   position: absolute;
 
 }
 .frameblack {
   width: 465px;
   height: 660px;
-  position: absolute; /* Set the position absolute */
+  position: relative; /* Set the position absolute */
   z-index: 0; /* The larger number will be on top*/
   right: 7px;
   top: 100px;
 }
 
-.frame-video {
+.frame-video1 {
+  position: relative; /* Set the position absolute */
+  z-index: 0;
+  width: 300px;
+  height: 100px;
+}
+.frame-video2 {
   position: relative; /* Set the position absolute */
   z-index: 0;
   width: 200px;
   height: 100px;
 }
 
+
 .position1 {
-  position: sticky;
+  position: relative;
   top: 600px;
   left: 0px;
   width: 300px;
   
 }
 .position2 {
+  position: relative;
   top: 300px;
   right: 20px;
 }
