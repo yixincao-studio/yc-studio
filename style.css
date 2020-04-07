@@ -95,8 +95,9 @@ footer {
 
 /!---------------------------------!/
 
-.body{
-  color: black;
+.city{
+  
+  background-color: black;
 }
 
 .bg-img{
@@ -157,26 +158,140 @@ footer {
 .frame-video1 {
   position: absolute; 
   z-index: 0;
-  width: 200px;
-  height: 300px;
+  width: 170px;
+  height: 260px;
+  z-index: 1;
 }
-.frame-video2 {
-  position: absolute; 
-  z-index: 0;
-  width: 200px;
-  height: 100px;
- 
-}
+
 .position1 {
   top: 300px;
   left: 10px;
-}
-.position2{
-  top: 300px;
-  right: 400px;
+  
+
 }
 
-footer2 {
+
+.ink1 {
+  top: 100px;
+  left: 50px;
+  width: 400px;
+  height: 140px;
+  z-index: 1;
+  -webkit-animation: ink1 2s infinite ease-in-out; /* Safari 4+ */
+  -moz-animation: ink1 2s infinite ease-in-out; /* Fx 5+ */
+  -o-animation: ink1 2s infinite ease-in-out; /* Opera 12+ */
+  animation: ink1 2s infinite ease-in-out;
+}
+
+.ink2 {
+  top: 480px;
+  left: 100px;
+  animation: avanger 2s infinite ease-in-out;
+}
+
+.ink3 {
+  right: 40px;
+  animation: tientang 2s infinite ease-in-out;
+}
+
+.ink4 {
+  right: 160px;
+  bottom: -80px;
+  z-index: 5;
+  transition: 3s ease-in-out;
+  cursor: pointer;
+}
+
+.ink4:hover {
+  right: 200px;
+  bottom: -10px;
+}
+
+@keyframes position1 {
+  0% {
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    transform: translate(8px, 8px);
+  }
+
+  100% {
+    transform: translate(0px, 2px);
+  }
+}
+
+
+@-moz-keyframes ink1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(20px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@-o-keyframes ink1 {
+  0% {
+    opacity: 0.2;
+    transform: translate(0px, -50px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0px, 50px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translate(0px, -50px);
+  }
+}
+
+@-webkit-keyframes ink1 {
+  0% {
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    transform: translate(8px, 8px);
+  }
+
+  100% {
+    transform: translate(0px, 2px);
+  }
+}
+
+@keyframes ink1 {
+  0% {
+    transform: translate(0px, 2px);
+  }
+
+  50% {
+    transform: translate(0px, 10px);
+  }
+
+  100% {
+    transform: translate(0px, 2px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer2 {
   width: 100%;
   padding: 90px 0px 24px 0px;
   text-align-last: justify;
