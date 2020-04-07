@@ -95,22 +95,101 @@ footer {
 
 /!---------------------------------!/
 
-.city{
-  
+.bg{
   background-color: black;
 }
 
-.bg-img{
-  margin-top: 0px;
-  width: 100%;
-  margin: 0px;
-  padding-right: 50px;
-  left:20px;
-  background-image: cover;
-  z-index: 0;
-  
+.container {
+  position: absolute;
+  overflow-y: scrolls;
+  height: 800px;
+}
+.city-bg,
+.ink1,
+.ink2,
+.ink3,
+.ink4,
+.ink5,
+ {
+  position: absolute;
 }
 
+
+.city-bg{
+  width: 100%;
+  
+  
+}
+.video1 {
+  position: absolute; 
+  z-index: 0;
+  width: 170px;
+  height: 260px;
+  z-index: 1;
+  animation: video 5s infinite ease-in-out;
+}
+
+iframe {
+  opacity: 0.9;
+  border-color: black;
+
+}
+.position1 {
+  top: 100px;
+  left: 10px;
+  z-index: 1;
+}
+  
+.ink1 {
+  top: 100px;
+  left: 50px;
+  width: 400px;
+  height: 140px;
+  z-index: 1;
+  -webkit-animation: ink1 2s infinite ease-in-out; /* Safari 4+ */
+  -moz-animation: ink1 2s infinite ease-in-out; /* Fx 5+ */
+  -o-animation: ink1 2s infinite ease-in-out; /* Opera 12+ */
+  animation: ink1 2s infinite ease-in-out;
+}
+
+.ink2 {
+  top: 40px;
+  left: 100px;
+  width: 150px;
+  height: 110px;
+  animation: avanger 2s infinite ease-in-out;
+}
+
+.ink3 {
+  right: 40px;
+  width: 400px;
+  height: 140px;
+  animation: tientang 2s infinite ease-in-out;
+}
+
+.ink4 {
+  right: 160px;
+  bottom: -80px;
+  width: 400px;
+  height: 140px;
+  z-index: 5;
+  transition: 3s ease-in-out;
+  cursor: pointer;
+}
+
+.ink4:hover {
+  right: 200px;
+  bottom: -10px;
+}
+.ink5 {
+  width: 400px;
+  height: 140px;
+  right: 160px;
+  bottom: -80px;
+  z-index: 5;
+  transition: 3s ease-in-out;
+  cursor: pointer;
+}
 .buttom2{
   background-color: rgb(22, 66, 70);
   background-position: center;
@@ -146,78 +225,51 @@ footer {
   display: flex;
   transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 3;
-  width: 700px;
-  height: 450px;
+  border: 10px;
+  padding: 30px;
+  width: 600px;
+  height: 250px;
   right: 70px;
   top: 1400px;
   text-align: justify;
-
-}
-
-.frame-video1 {
-  position: absolute; 
-  z-index: 0;
-  width: 170px;
-  height: 260px;
-  z-index: 1;
-}
-
-.position1 {
-  top: 300px;
-  left: 10px;
-  
-
-}
-
-
-.ink1 {
-  top: 100px;
-  left: 50px;
-  width: 400px;
-  height: 140px;
-  z-index: 1;
-  -webkit-animation: ink1 2s infinite ease-in-out; /* Safari 4+ */
-  -moz-animation: ink1 2s infinite ease-in-out; /* Fx 5+ */
-  -o-animation: ink1 2s infinite ease-in-out; /* Opera 12+ */
-  animation: ink1 2s infinite ease-in-out;
-}
-
-.ink2 {
-  top: 480px;
-  left: 100px;
-  animation: avanger 2s infinite ease-in-out;
-}
-
-.ink3 {
-  right: 40px;
-  animation: tientang 2s infinite ease-in-out;
-}
-
-.ink4 {
-  right: 160px;
-  bottom: -80px;
-  z-index: 5;
-  transition: 3s ease-in-out;
-  cursor: pointer;
-}
-
-.ink4:hover {
-  right: 200px;
-  bottom: -10px;
-}
-
-@keyframes position1 {
-  0% {
-    transform: translate(0px, 2px);
+  background-color: black;
+  float: center;
+  color: white;
+  border-style: double;
+  border-radius: 0.7em;
+ 
+    
   }
 
+}
+
+
+
+@keyframes frame-video1 {
+  0% {
+    transform: translate(400px, 0px);
+    transform: rotate(90deg);
+    transform: scaleX(2);
+  }
+  25% {
+    transform: translate(400px, 400px);
+    transform: rotate(180deg);
+    transform: scaleX(0.5);
+  }
   50% {
-    transform: translate(8px, 8px);
+    transform: translate(-400px, 400px);
+    transform: rotate(270deg);
+  }
+  75% {
+    transform: translate(-400px, -400px);
+    transform: rotate(360deg);
+    transform: scaleY(1.5);
   }
 
   100% {
-    transform: translate(0px, 2px);
+    transform: translate(400px, 0px);
+    transform: rotate(0deg);
+    transform: scaleY(3);
   }
 }
 
