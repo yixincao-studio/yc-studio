@@ -55,6 +55,7 @@
    position: absolute;
    top: 70%;
    left: 90%;
+   border-radius: 0.6em;
    transform: translate(-50%, -50%);
    transition-property: transform; 
    transition-duration: 1s;
@@ -93,103 +94,102 @@ footer {
 
 
 
-/!---------------------------------!/
+/*project2-page2*/
 
-.bg{
+body{
   background-color: black;
 }
 
-.container {
+.city-container{
   position: absolute;
-  overflow-y: scrolls;
-  height: 800px;
+  overflow-y: hidden;
+  height: 1080px;
 }
-.city-bg,
-.ink1,
-.ink2,
-.ink3,
-.ink4,
-.ink5,
- {
-  position: absolute;
-}
-
 
 .city-bg{
   width: 100%;
-  
-  
+  z-index: -1;
+  position: absolute;
 }
 .video1 {
-  position: absolute; 
-  z-index: 0;
+  top: 350px;
+  left: 300px;
   width: 170px;
-  height: 260px;
+  height: 230px;
   z-index: 1;
-  animation: video 5s infinite ease-in-out;
-}
+  border-radius: 10em;
+  position: absolute;
+  transform: skewX(170deg);
+  
+ }
+
+ .video1:hover{
+   width: 400px;
+   height: 540px;
+   right: 500px;
+   top: 100px;
+
+ }
 
 iframe {
   opacity: 0.9;
-  border-color: black;
+  border-radius: 0.5em;
+  border-color: darkkhaki;
+}
 
-}
-.position1 {
-  top: 100px;
-  left: 10px;
-  z-index: 1;
-}
-  
 .ink1 {
-  top: 100px;
-  left: 50px;
+  left: 80px;
+  top: 600px;
   width: 400px;
   height: 140px;
   z-index: 1;
-  -webkit-animation: ink1 2s infinite ease-in-out; /* Safari 4+ */
-  -moz-animation: ink1 2s infinite ease-in-out; /* Fx 5+ */
-  -o-animation: ink1 2s infinite ease-in-out; /* Opera 12+ */
+  border-radius: 0.3em;
+
+  position: absolute;
+
   animation: ink1 2s infinite ease-in-out;
 }
 
 .ink2 {
-  top: 40px;
-  left: 100px;
-  width: 150px;
-  height: 110px;
-  animation: avanger 2s infinite ease-in-out;
+  left:650px;
+  bottom: 320px;
+  width: 110px;
+  height: 170px;
+  z-index: 1;
+  position: absolute;
+  border-radius: 0.3em;
+  animation: ink2 2s infinite ease-in-out;
+ 
 }
 
 .ink3 {
-  right: 40px;
+  right:20px;
+  top: 500px;
   width: 400px;
   height: 140px;
-  animation: tientang 2s infinite ease-in-out;
+  z-index: 1;
+  position: absolute;
+  border-radius: 0.3em;
+  animation: ink3 2s infinite ease-in-out;
+
 }
 
 .ink4 {
-  right: 160px;
-  bottom: -80px;
-  width: 400px;
-  height: 140px;
-  z-index: 5;
+  right: 210px;
+  top: 320px;
+  width: 160px;
+  height: 100px;
+  z-index: 1;
   transition: 3s ease-in-out;
-  cursor: pointer;
+  position: absolute;
+  border-radius: 0.3em;
+  animation: ink4 2s infinite ease-in-out;
+  
+ 
 }
 
-.ink4:hover {
-  right: 200px;
-  bottom: -10px;
-}
-.ink5 {
-  width: 400px;
-  height: 140px;
-  right: 160px;
-  bottom: -80px;
-  z-index: 5;
-  transition: 3s ease-in-out;
-  cursor: pointer;
-}
+
+
 .buttom2{
   background-color: rgb(22, 66, 70);
   background-position: center;
@@ -200,27 +200,19 @@ iframe {
   widows: 10px;
   text-align: center;
   position: absolute;
-  top: 1600px;
+  top: 1700px;
   left: 50%;
+  border-radius: 0.6em;
   transform: translate(-50%, -50%);
   transition-property: transform; 
   transition-duration: 1s;
   
  }
+
 .buttom2:hover {
  background-color: rgb(153, 31, 31);
  transform: rotateY(180deg);
 }
-
-.frameblack {
-  width: 800px;
-  height: 400px;
-  position: absolute; /* Set the position absolute */
-  z-index: 2; /* The larger number will be on top*/
-  right: 330px;
-  top: 1100px;
-}
-
 .paragraph{
   display: flex;
   transform: translate(-50%, -50%);
@@ -237,44 +229,32 @@ iframe {
   color: white;
   border-style: double;
   border-radius: 0.7em;
- 
-    
-  }
-
 }
 
 
 
-@keyframes frame-video1 {
+@keyframes video1 {
+  
+}
+
+@keyframes ink1 {
   0% {
-    transform: translate(400px, 0px);
-    transform: rotate(90deg);
-    transform: scaleX(2);
+    transform: translate(0px, 2px);
+    transform; rotate z-index:(10deg);
   }
-  25% {
-    transform: translate(400px, 400px);
-    transform: rotate(180deg);
-    transform: scaleX(0.5);
-  }
+
   50% {
-    transform: translate(-400px, 400px);
-    transform: rotate(270deg);
-  }
-  75% {
-    transform: translate(-400px, -400px);
-    transform: rotate(360deg);
-    transform: scaleY(1.5);
+    transform: translate(10px, 8px);
+    transform; rotate z-index:(10deg);
   }
 
   100% {
-    transform: translate(400px, 0px);
-    transform: rotate(0deg);
-    transform: scaleY(3);
+    transform: translate(0px, 2px);
+    transform; rotate z-index:(10deg);
   }
 }
 
-
-@-moz-keyframes ink1 {
+@-moz-keyframes ink2 {
   0% {
     transform: translate(0px, 0px);
   }
@@ -287,7 +267,7 @@ iframe {
     transform: translate(0px, 0px);
   }
 }
-@-o-keyframes ink1 {
+@-o-keyframes ink2 {
   0% {
     opacity: 0.2;
     transform: translate(0px, -50px);
@@ -304,7 +284,7 @@ iframe {
   }
 }
 
-@-webkit-keyframes ink1 {
+@-webkit-keyframes ink2 {
   0% {
     transform: translate(0px, 2px);
   }
@@ -318,7 +298,7 @@ iframe {
   }
 }
 
-@keyframes ink1 {
+@keyframes ink2 {
   0% {
     transform: translate(0px, 2px);
   }
@@ -332,20 +312,96 @@ iframe {
   }
 }
 
+@keyframes ink3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
 
+  20% {
+    transform: translate(20px, 0px);
+  }
 
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ink4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
 
+  20% {
+    transform: translate(30px, 2px);
+  }
 
-
-
-
-
-
-
-
-.footer2 {
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+ .footer2 {
   width: 100%;
-  padding: 90px 0px 24px 0px;
-  text-align-last: justify;
+  position: absolute;
   clear: both;
+  top: 600px;
+
+  color: aliceblue;
+}
+
+
+
+
+/*project1-page3 */
+
+.project1-body{
+  color: rgb(51, 3, 95)5, 168);
+}
+.project1-container {
+  position: absolute;
+  overflow-y: hidden;
+
+}
+
+
+.bgink{
+  width: 1080px;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+}
+.bgink:hover {
+  right: 200px;
+  bottom: -10px;
+}
+
+.building{
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+
+}
+
+
+.buttom3{
+  background-color: rgb(245, 247, 173);
+  background-position: center;
+  color: rgb(0, 0, 0);
+  padding: 7px 10px;
+  margin-bottom: 100px;
+  border: dotted;
+  widows: 10px;
+  text-align: center;
+  position: absolute;
+  top: 1700px;
+  left: 50%;
+  border-radius: 0.6em;
+  transform: translate(-50%, -50%);
+  transition-property: transform; 
+  transition-duration: 1s;
+  
+ }
+
+.buttom3:hover {
+ background-color: rgb(153, 31, 31);
+ transform: rotateY(180deg);
 }
