@@ -423,8 +423,8 @@ iframe {
 
 @keyframes video {
   0% {
-    transform: translate(200px, 0px);
-    transform: rotate(90deg);
+    transform: translate(400px, 0px);
+    transform: rotate(180deg);
     transform: scaleZ(2);
   }
   25% {
