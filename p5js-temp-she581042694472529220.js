@@ -28,19 +28,7 @@ function draw() {
   rotateY(theta * mouseX * 0.001);
 
   //pass image as texture
-  texture(vid);
-  sphere(150);
-  pop();
-  translate(440, 0, 0);
-  push();
-  rotateZ(theta * 0.1);
-  rotateX(theta * 0.1);
-  rotateY(theta * 0.1);
-  texture(img1);
-  sphere(150);
-  pop();
-  theta += 0.04;
-  
+
 
   
 
@@ -121,4 +109,3 @@ function draw() {
   pop();
   theta += 0.03;
 }
-  
